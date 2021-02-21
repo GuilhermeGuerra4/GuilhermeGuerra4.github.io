@@ -3,37 +3,88 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 /*Landing section*/
-
 section.landing{
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: #36156A;
-    background-image: url("../images/shapes.svg");
     background-size: 100%;
     background-position-y: bottom;
     background-repeat: no-repeat;
-    align-items: center;
+}
+
+section.landing .middleContainer{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 100px);
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section.landing .content{
-    width: 50%;
-    padding-left: 15%;
+    clear: right;
+    width: 100%;
+    padding-left: 10%;
+    display: inline-block;
 }
+
+/* menu */
+.menu{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.menu ul{
+    width: auto;
+    height: auto;
+    float: right;
+    padding: 30px;
+}
+
+.menu ul li{
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.menu ul li span{
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.4em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu ul li span:hover{
+    color: #ccc;
+}
+
 
 section.landing .content h1{
     width: 100%;
-    font-size: 2.3em;
+    font-size: 2.6em;
     color: #fcfcfc;
+}
+
+.markedText{
+    color: #CE3535;
 }
 
 section.landing .content .container{width: 100%;margin-top: 25px;}
 
 section.landing .content .container .button{
-    width: 40%;
+    width: 180px;
     height: 40px;
     background-color: #fff;
     color: #222;
@@ -50,98 +101,94 @@ section.landing .content .container .button:active{
     background-color: #ccc;
 }
 
-section.landing .illustration{
+
+section.landing .middleContainer .illustration{
     position: absolute;
-    right: 0;
+    width: 35%;
+    height: auto;
     bottom: 0;
-    width: 50%;
+    right: 0;
 }
 
-section.landing .illustration img{
+section.landing .middleContainer .illustration img{
     width: 100%;
     height: 100%;
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
+    transition-duration: 0.5s;
+    animation: ani1 1s infinite;
+    animation-direction: alternate;
 }
+
+
+@keyframes ani1{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 10px;
+    }
+}
+
 
 /*About section*/
 
 section.about{
+    position: relative;
     width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
     background-color: #171717;
-}
-
-section.about aside{
-    float: left;
-    width: 25%;
-    height: 100%;
-    background-color: #1C1C1C;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-}
-
-section.about aside img{
-    border-radius: 100%;
-    border: solid 4px #36156A;
-}
-
-section.text{
+    display: block;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-section.text .content{
-    width: 49%;
-}
-
-section.text h2, section.text p{
-    color: #dbdbdb;
-}
-
-section.text h2{
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-section.text p{
-    font-size: 1.4em;
-}
-
-section.skills{
+section.about .align{
+    position: relative;
     width: 100%;
-    height: 60vh;
-    background-color: #131313;
-    padding: 50px;
-}
-
-section.skills h2{
-    color: #dbdbdb;
-    margin-bottom: 30px;
-    font-size: 1.8em;
-}
-
-section.skills .skills-list{
-    width: 60%;
     height: auto;
 }
 
-section.skills .skills-list .skill{
-    padding: 10px;
-    border: solid 1px #424242;
-    background-color: #424242;
-    border-radius: 4px;
-    margin: 5px 5px 5px 0px;
-    display: inline-block;
+section.about .title{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
-section.skills .skills-list .skill span{
-    color: #D8D8D8;
-    user-select: none;
+section.about .title h2{
+    color: #fff;
+    font-size: 2em;
+}
+
+section.about .description{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.about .description .text{
+    max-width: 50%;
+    padding: 30px;
+}
+
+section.about .description .text p{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+section.about .description .image{
+    width: 17%;
+}
+
+section.about .description .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
 }
