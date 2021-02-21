@@ -9,6 +9,10 @@
     appearance: none;
 }
 
+body{
+    background-color: #F2F2F2;
+}
+
 /*Landing section*/
 section.landing{
     position: relative;
@@ -70,7 +74,6 @@ section.landing .content{
     color: #ccc;
 }
 
-
 section.landing .content h1{
     width: 100%;
     font-size: 2.6em;
@@ -101,7 +104,6 @@ section.landing .content .container .button:active{
     background-color: #ccc;
 }
 
-
 section.landing .middleContainer .illustration{
     position: absolute;
     width: 35%;
@@ -122,7 +124,6 @@ section.landing .middleContainer .illustration img{
     animation-direction: alternate;
 }
 
-
 @keyframes ani1{
     from{
         bottom: 0;
@@ -132,13 +133,11 @@ section.landing .middleContainer .illustration img{
     }
 }
 
-
 /*About section*/
-
 section.about{
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #171717;
     display: block;
     display: flex;
@@ -191,4 +190,89 @@ section.about .description .image img{
     width: 100%;
     height: 100%;
     border-radius: 4px;
+}
+
+/*projects*/
+section.projects{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+section.projects .title{
+    width: 100%;
+    height: auto;
+    margin: 50px auto 50px;
+}
+
+section.projects .title h2{
+    color: #1F1F1F;
+    text-align: center;
+    font-size: 2em;
+}
+
+.panelsContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.panelsContainer .project{
+    width: 100%;
+    height: auto;
+    clear: both;
+}
+
+.panelsContainer .project .image{
+    width: 25%;
+    float: left;
+}
+
+.panelsContainer .project .image img, .panelsContainer .project-right .image img{width: 100%;height: 100%;}
+
+.panelsContainer .project .content{
+    width: 65%;
+    float: left;
+    padding: 40px;
+}
+
+.panelsContainer .content h3{
+    font-size: 1.5em;
+    color: #333333;
+}
+
+.panelsContainer .content p{
+    font-size: 1.2em;
+}
+
+.project-right{
+    position: relative;
+    width: 100%;
+    height: auto;
+    clear: left;
+    top: -70px;
+}
+
+.ell{
+    position: relative;
+}
+
+.project-right .image{
+    width: 25%;
+    float: right;
+}
+
+.project-right .content, 
+.project-right .content h3,
+.project-right .content p
+{
+    text-align: right;
+}
+
+.project-right .image{
+    margin-left: 40px;
+}
+
+.project-right .content{
+    padding-top: 40px;
 }

@@ -30,8 +30,36 @@
         margin: auto;
         margin-top: 30px;
     }
+    section.about .title h2{
+        font-size: 1.5em;
+    }
 }
 
-@media(max-width: 1300px){
-   
+@media(max-width: 1000px){
+    section.about .title{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    section.about .description{
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+    section.about .description .image{
+        width: 50%;
+    }
+    section.about .description .image,section.about .description .text{
+        margin: auto;
+        padding: 0;
+    }
+    section.about .description .text{
+        width: auto;
+        max-width: none;
+        padding: 50px;
+    }
+    section.about .description .text p{
+        width: 100%;
+        font-size: 1.2em;
+        text-align: justify;
+    }
 }
