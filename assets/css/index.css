@@ -150,7 +150,7 @@ section.about .align{
     height: auto;
 }
 
-section.about .title{
+section.about .title, section.contact .title{
     position: relative;
     width: auto;
     height: auto;
@@ -278,10 +278,59 @@ section.projects .title h2{
     padding-top: 40px;
 }
 
-.contact{
+section.contact{
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 50px;
     background-color: #161616;
     clear: both;
+    padding-top: 60px;
+}
+
+section.contact .title h2{
+    color: #fff;
+    font-size: 2em;
+}
+
+section.contact .form{
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+section.contact .form .input{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+section.contact .form .input input, 
+section.contact .form .input textarea{
+    width: 100%;
+    height: 45px;
+    box-sizing: none;
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    background-color: #292929;
+    color: #DDDDDD;
+    border-radius: 4px;
+}
+
+section.contact .form .input textarea{
+    height: 100px;
+    max-height: 300px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+section.contact .form .input input[type="button"]{
+    background-color: #36156A;
+    cursor: pointer;
+}
+
+section.contact .form .input input[type="button"]:active{
+    background-color: #30156A;
 }
