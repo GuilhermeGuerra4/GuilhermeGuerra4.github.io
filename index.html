@@ -11,13 +11,12 @@
 </head>
 <body>
 	
-	<section class="landing">
+	<section class="landing" id="landing">
 		<div class="menu">
 			<ul>
-				<li><span>Home</span></li>
-				<li><span>Portfólio</span></li>
-				<li><span>Sobre mim</span></li>
-				<li><span>Contacto</span></li>
+				<li><span class="scroll" ppt="projects">Portfólio</span></li>
+				<li><span class="scroll" ppt="about">Sobre mim</span></li>
+				<li><span class="scroll" ppt="contact">Contacto</span></li>
 			</ul>
 		</div>
 
@@ -25,7 +24,7 @@
 			<div class="content">
 				<h1>Olá,</br> sou o Guilherme,</br>faço <span class="markedText">websites</span> e <span class="markedText">apps</span>.</h1>
 				<div class="container">
-					<button class="button">Saber mais</button>
+					<button class="button" onclick="goToAbout();" id="learn-more">Saber mais</button>
 				</div>
 			</div>
 			<div class="illustration">
@@ -34,7 +33,7 @@
 		</div>		
 	</section>
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="align">
 			<div class="title">
 				<h2>Sobre mim</h2>
@@ -55,7 +54,7 @@
 		</div>
 	</section>
 
-	<section class="projects">
+	<section class="projects" id="projects">
 		<div class="title">
 			<h2>Projetos</h2>
 		</div>
@@ -102,28 +101,28 @@
 		</div>
 	</section>
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="title">
 			<h2>Entre em contacto</h2>
 		</div>
 		<div class="form">
 			<div class="input">
-				<input type="email" placeholder="Email">
+				<input type="email" placeholder="Email" id="email">
 			</div>
 
 			<div class="input">
-				<input type="text" placeholder="Assunto">
+				<input type="text" placeholder="Assunto" id="assunto">
 			</div>
 
 			<div class="input">
-				<textarea cols="500" placeholder="Mensagem"></textarea>
+				<textarea cols="500" placeholder="Mensagem" id="mensagem"></textarea>
 			</div>
 
 			<div class="input">
-				<input type="button" value="Enviar">
+				<input type="button" onclick="sendMail();" value="Enviar">
 			</div>
 		</div>
 	</section>
-
+	<script src="assets/scripts/index.js"></script>
 </body>
 </html>
