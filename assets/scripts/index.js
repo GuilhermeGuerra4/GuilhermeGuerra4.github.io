@@ -14,7 +14,6 @@ function goToAbout(){
 
 function sendMail() {
     var link = "mailto:guilhermeguerra403@gmail.com"
-             + "?cc=" + escape(document.getElementById('email').value)
              + "&subject=" + escape(document.getElementById('assunto').value)
              + "&body=" + escape(document.getElementById('mensagem').value);
 
