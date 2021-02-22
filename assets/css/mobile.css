@@ -128,3 +128,42 @@
         font-size: 1.7em;
     }
 }
+
+@media(max-width: 320px){
+    section.contact{
+        padding-top: 50px;
+    }
+    section.contact .title{
+        margin-bottom: 20px;
+    }
+    section.contact .title h2,
+    section.about .title h2,
+    section.projects .title h2{
+        font-size: 1.5em;
+    }
+    section.landing .content h1{
+        font-size: 1.4em;
+    }
+    section.about .description .text{
+        padding: 20px;
+    }
+    section.about .description .text p{
+        text-align: left;
+    }
+    section.contact .form{
+        width: 85%;
+    }
+
+    section.projects .content h3{
+        font-size: 1.3em;
+    }
+
+    section.projects .content{
+        width: 100%;
+    }
+
+    .panelsContainer .project-right{
+    }
+
+
+}
