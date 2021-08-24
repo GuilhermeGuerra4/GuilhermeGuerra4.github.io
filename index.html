@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-PT">
 <head>
 	<meta charset="utf-8"/>
-	<title>Guilherme Guerra - Portfolio</title>
+	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="Portfólio" />
+	<meta property="og:title" content="Guilherme Guerra - Website" />
+	<meta property="og:description" content="DESCRIPTION OF " />
+	<meta property="og:image" content="https://guilhermeguerra4.github.io/assets/images/favicon/android-chrome-256x256.png" />
+	<meta property="og:url" content="https://guilhermeguerra4.github.io" />
+	<meta property="og:site_name" content="Guilherme Guerra Website" />
+	<title>Guilherme Guerra - Portfólio</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#603cba">
+	<meta name="theme-color" content="#333">
 	<link rel="stylesheet" href="assets/css/index.css"/>
 	<link rel="stylesheet" href="assets/css/mobile.css"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
-	
 	<section class="landing" id="landing">
 		<div class="menu">
 			<ul>
@@ -28,7 +41,7 @@
 				</div>
 			</div>
 			<div class="illustration">
-				<img src="assets/images/programmer-illustration2.svg" />
+				<img src="assets/images/programmer-illustration2.svg" alt="ilustração de um rapaz com um computador no colo a programar." />
 			</div>
 		</div>		
 	</section>
@@ -40,12 +53,12 @@
 			</div>
 			<div class="description">
 				<div class="image">
-					<img src="assets/images/me.jpg">
+					<img src="assets/images/me.jpg" alt="Uma foto de Guilherme Guerra">
 				</div>
 				<div class="text">
 					<p>Sou um jovem apaixonado por tecnologia. Gosto de resolver problemas e inventar soluções de 
 						maneira criativa. Comecei a aprender programação sozinho há 5 anos e desde então trabalhei em 
-						inúmeros projetos. Tenho experiência em design, programação, gestão de projetos e redes sociais.</p>
+						inúmeros projetos. Tenho experiência em design e programação.</p>
 				</div>
 			</div>
 		</div>
@@ -58,41 +71,45 @@
 		<div class="panelsContainer">
 			<div class="project">
 				<div class="image">
-					<img src="assets/images/projects/1.jpg">
+					<img src="assets/images/projects/1.jpg" alt="Imagem da App Ourshelter no ecrã principal">
 				</div>
 				<div class="content">
 					<h3>OurshelterApp</h3>
-					<p>Uma app desenvolvida com o objetivo de reunir várias ferramentas </p><p> e atividades para casais num só lugar.</p>
+					<p>Uma App desenvolvida com o objetivo de reunir várias ferramentas </p><p> e atividades para casais num só lugar.</p>
+					<!--<a href="#"><span>Ver mais</span></a>-->
 				</div>
 			</div>
 
 			<div class="project-right">
 				<div class="image image-right">
-					<img src="assets/images/projects/2.jpg">
+					<img src="assets/images/projects/2.jpg" alt="Imagem da App YourStories no ecrã principal">
 				</div>
 				<div class="content">
 					<h3>YourStories</h3>
-					<p>Uma mistura de Twitter com Reddit.</p><p>Os utilizadores podem postar e ler pequenas histórias.</p>
+					<p>Uma combinação de Twitter com Reddit.</p>
+					<p>Os utilizadores podem postar e ler pequenas histórias.</p>
+					<p>Além de interagir com outros utilizadores</p>
 				</div>
 			</div>
 
 			<div class="project ell">
 				<div class="image">
-					<img src="assets/images/projects/3.jpg">
+					<img src="assets/images/projects/3.jpg"  alt="Imagem da App ReactChat">
 				</div>
 				<div class="content">
 					<h3>ReactApp</h3>
-					<p>Um chat simples, semelhante ao do whatsapp.</p>
+					<p>Uma App que serve para enviar e receber mensagens</p><p>para os seus amigos em tempo real.</p>
 				</div>
 			</div>
 
 			<div class="project-right ell">
 				<div class="image image-right">
-					<img src="assets/images/projects/4.jpg">
+					<img src="assets/images/projects/4.jpg" alt="Imagem do website para webinars">
 				</div>
 				<div class="content">
 					<h3>Webinar</h3>
-					<p>Website que apresenta um webinar e um formulário de inscrição.</p>
+					<p>Website com o objetivo de permitir a inscrição a um webinar.</p>
+					<p>No dia do evento os utilizadores são notificados por email.</p>
 				</div>
 			</div>
 		</div>
@@ -104,19 +121,19 @@
 		</div>
 		<div class="form">
 			<div class="input">
-				<input type="email" placeholder="Email" id="email">
+				<input type="email" placeholder="Email" id="email" label-for="Email">
 			</div>
 
 			<div class="input">
-				<input type="text" placeholder="Assunto" id="assunto">
+				<input type="text" placeholder="Assunto" id="assunto" label-for="Assunto">
 			</div>
 
 			<div class="input">
-				<textarea cols="500" placeholder="Mensagem" id="mensagem"></textarea>
+				<textarea cols="500" placeholder="Mensagem" id="mensagem" label-for="Mensagem"></textarea>
 			</div>
 
 			<div class="input">
-				<input type="button" onclick="sendMail();" value="Enviar">
+				<input type="button" onclick="sendMail();" arial-label="Enviar" value="Enviar">
 			</div>
 		</div>
 	</section>
